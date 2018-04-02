@@ -11,9 +11,18 @@ html {
 }
 
 body {
-/*    background-image: url("../images/liifeofmomobackground.png");*/
+/*
+    background-image: url("../images/liifeofmomobackground.png");
     background-size: contain;
     background-position: center;
+*/
+    
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/liifeofmomobackground.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 h1,
@@ -37,7 +46,7 @@ a {
 }
 
 a:hover {
-    color: #aaa;
+    color: rgb(246, 203, 64);
 }
 
 .logo {
@@ -49,6 +58,7 @@ a:hover {
 header {
     display: flex;
     align-items: center;
+    background-color: rgba(168, 34, 239, 0.55);
 
 }
 
@@ -61,18 +71,24 @@ header nav ul {
     justify-content: flex-end;
 }
 
-header nav il {
+header nav li {
     list-style-type: none;
-    padding: 1em
+    padding: 1em;
 }
 
 main {
     display: flex;
-    flex-direction: column;
+/*    flex-direction: column;*/
     flex: 1;
-
+justify-content: center;
+    align-items: center;
 }
 
+.hero-text{
+    flex: 1;
+    
+    
+}
 p {
     width: 75%;
     max-width: 500px;
@@ -101,7 +117,7 @@ ul {
 /*    margin: 10px;*/
 /*    padding: 10px;*/
     overflow: hidden;
-    background-color: rgba(168, 34, 239, 0.55);
+/*    background-color: rgba(168, 34, 239, 0.55);*/
     text-transform: uppercase;
     font-size: 150%;
 }
@@ -113,17 +129,17 @@ li a {
     text-align: center;
 /*    padding: 20px 10px;*/
     padding-right: 15px;
-    text-decoration-line: underline;
-    text-decoration-color: black;
+/*    text-decoration-line: underline;*/
+/*    text-decoration-color: black;*/
 }
 
 li a:hover:not(.active) {
-    background-color: rgba(252, 252, 13, 0.67);
+/*    background-color: rgba(252, 252, 13, 0.67);*/
 }
 
 .active {
-    background-color: #fa0707;
-    backface-visibility: visible;
+/*    background-color: #fa0707;*/
+/*    backface-visibility: visible;*/
 }
 
 footer {
@@ -143,10 +159,12 @@ footer nav li {
     padding: 1em;
 }
 
-@media screen and (max-width: 30rem) {
+@media screen and (max-width: 50rem) {
     header,
     main,
+    nav ul,
     footer {
         flex-direction: column;
     }
 }
+
