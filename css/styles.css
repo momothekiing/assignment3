@@ -11,13 +11,12 @@ html {
 }
 
 body {
-/*
+    /*
     background-image: url("../images/liifeofmomobackground.png");
     background-size: contain;
     background-position: center;
 */
-    
-     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/liifeofmomobackground.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/liifeofmomobackground.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -39,7 +38,7 @@ h2 {
 
 a {
     color: #fff;
-/*    font-size: 1.2em;*/
+    /*    font-size: 1.2em;*/
     transition: background-color .3s, color .3s;
     text-decoration: none;
     text-transform: uppercase;
@@ -51,8 +50,7 @@ a:hover {
 
 .logo {
     height: 7em;
-/*    padding: 1em;*/
-
+    /*    padding: 1em;*/
 }
 
 header {
@@ -78,17 +76,62 @@ header nav li {
 
 main {
     display: flex;
-/*    flex-direction: column;*/
+    flex-direction: column;
     flex: 1;
-justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
 }
 
-.hero-text{
+.hero-text {
     flex: 1;
-    
+}
+
+.topleft {
+    background-color: rgba(250, 12, 12, 0.67);
+    width: 80%;
+    border: #dbf705 solid 25px;
+    padding: 70px;
+    margin: 90px;
+    color: white;
+    text-align: center;
+    flex: 1;
+
+
+}
+.center{
+    flex: 1;
+     border: #dbf705 solid 25px;
+    background-color: rgba(250, 12, 12, 0.67);
+    padding: 70px;
+    margin: 90px;
+    color: white;
+  text-align:center;
     
 }
+.topcenter{
+    flex: 1;
+     border: #dbf705 solid 25px;
+    background-color: rgba(250, 12, 12, 0.67);
+    padding: 607px;
+    margin: 70px;
+    color: white;
+    text-align: center;
+   
+    
+}
+.middle {
+   flex: 1
+    border: #dbf705 solid 25px;
+    background-color: rgba(250, 12, 12, 0.67);
+    padding: 70px;
+    margin: 90px;
+    color: white;
+    text-align: center;
+    
+
+}
+
+
 p {
     width: 75%;
     max-width: 500px;
@@ -110,36 +153,37 @@ img {
     text-align: center;
     color: #fdf408;
     font-weight: 300;
+    filter: 1;
 }
 
 ul {
     list-style-type: none;
-/*    margin: 10px;*/
-/*    padding: 10px;*/
+    /*    margin: 10px;*/
+    /*    padding: 10px;*/
     overflow: hidden;
-/*    background-color: rgba(168, 34, 239, 0.55);*/
+    /*    background-color: rgba(168, 34, 239, 0.55);*/
     text-transform: uppercase;
     font-size: 150%;
 }
 
 
 li a {
-   
+
     color: white;
     text-align: center;
-/*    padding: 20px 10px;*/
+    /*    padding: 20px 10px;*/
     padding-right: 15px;
-/*    text-decoration-line: underline;*/
-/*    text-decoration-color: black;*/
+    /*    text-decoration-line: underline;*/
+    /*    text-decoration-color: black;*/
 }
 
 li a:hover:not(.active) {
-/*    background-color: rgba(252, 252, 13, 0.67);*/
+    /*    background-color: rgba(252, 252, 13, 0.67);*/
 }
 
 .active {
-/*    background-color: #fa0707;*/
-/*    backface-visibility: visible;*/
+    /*    background-color: #fa0707;*/
+    /*    backface-visibility: visible;*/
 }
 
 footer {
@@ -167,4 +211,3 @@ footer nav li {
         flex-direction: column;
     }
 }
-
