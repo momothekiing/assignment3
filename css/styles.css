@@ -191,10 +191,7 @@ li a:hover:not(.active) {
 .picture-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    grid-template-columns:3;
-    justify-items: center;
-    grid-gap 10px;
-    grid-row-gap: 5px;
+    grid-row-gap: 10px;
     flex: 1;
 }
 
