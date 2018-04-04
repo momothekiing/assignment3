@@ -80,6 +80,7 @@ main {
     flex: 1;
     justify-content: center;
     align-items: center;
+    text-align: center
 }
 
 .hero-text {
@@ -98,62 +99,67 @@ main {
 
 
 }
-.center{
+
+.center {
     flex: 1;
-     border: #dbf705 solid 25px;
-    background-color: rgba(250, 12, 12, 0.67);
-    padding: 70px;
-    margin: 90px;
-    color: white;
-  text-align:center;
-    
-}
-.topcenter{
-    flex: 1;
-     border: #dbf705 solid 25px;
-    background-color: rgba(250, 12, 12, 0.67);
-    padding: 607px;
-    margin: 70px;
-    color: white;
-    text-align: center;
-   
-    
-}
-.middle {
-   flex: 1;
     border: #dbf705 solid 25px;
     background-color: rgba(250, 12, 12, 0.67);
     padding: 70px;
     margin: 90px;
     color: white;
     text-align: center;
-    
+
+}
+
+.topcenter {
+    flex: 1;
+    border: #dbf705 solid 25px;
+    background-color: rgba(250, 12, 12, 0.67);
+    padding: 607px;
+    margin: 70px;
+    color: white;
+    text-align: center;
+
+
+}
+
+.middle {
+    flex: 1;
+    border: #dbf705 solid 25px;
+    background-color: rgba(250, 12, 12, 0.67);
+    padding: 70px;
+    margin: 90px;
+    color: white;
+    text-align: center;
+
 
 }
 
 
 p {
-    width: 75%;
-    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+ 
 }
 
 img {
     padding: 0 10px 0 0;
 }
-
-.p-quote {
+main div{
+    justify-content: center;
+    flex: 1;
     background-color: rgb(168, 34, 239);
-    border-radius: 25px;
-    padding: 100px;
-    width: 50%;
-    margin-top: 10%;
-    margin-right: 25%;
-    margin-left: 25%;
-    margin-bottom: 10px;
-    text-align: center;
+    
+}
+.p-quote {
     color: #fdf408;
-    font-weight: 300;
-    flex:1;
+    text-align: center;
+ flex: 1;
+    
+    
 }
 
 ul {
@@ -164,39 +170,9 @@ ul {
     /*    background-color: rgba(168, 34, 239, 0.55);*/
     text-transform: uppercase;
     font-size: 150%;
+    text-align: center;
 }
 
-.galloryimagename
-{
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    justify-content: flex-end;
-    width: x;
-    
-    
-}
-.imageone{
-
-    width: 180px;
-}
-
-
-.gallry-display
-{
-    display: flex;
-    flex-direction: row;
-    flex: 3;
-  
-}
-
-.gallry-display2
-{
-    display: flex;
-    flex-direction: row;
-    flex: 3;
-  
-}
 
 li a {
 
@@ -211,6 +187,20 @@ li a {
 li a:hover:not(.active) {
     /*    background-color: rgba(252, 252, 13, 0.67);*/
 }
+
+.picture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns:3;
+    justify-items: center;
+    grid-gap 10px;
+    grid-row-gap: 5px;
+    flex: 1;
+}
+
+.grid-box img {
+    width: 100%;}
+
 
 .active {
     /*    background-color: #fa0707;*/
